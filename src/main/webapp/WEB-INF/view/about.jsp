@@ -33,25 +33,15 @@
       <a  href="#"><img style="position: relative; right:1430%;" alt="location on the map" src="${pageContext.request.contextPath}/resources/img/Logo-cut-version-70.png"></a>
     </div>
 		<ul class="navbar-nav">
-			<li class="nav-item"><a class="nav-link" href="userBranchesTasks">Main</a>
+		
+			<li class="nav-item"><a class="nav-link" href="showMyLoginPage">LogIn</a>	
 			</li>
-			<li class="nav-item"><a class="nav-link" href="loginPage">Logout</a>
-			
-			</li>
-			<li class="nav-item"><a class="nav-link" href="contactPage">Contacts</a>
-			<li class="nav-item"><a class="nav-link" href="aboutPage">About</a>
+			<li class="nav-item"><a class="nav-link" href="about">About</a>
 			</li>
 		</ul>
 	</nav>
 	<main>
-		<div style="width: 50%; margin: 3% auto; height: 95vh;">
-
-			<div>
-				<h3><p>We are located:</p>
-				<p>219 Fort Pitt Blvd # 2, Pittsburgh, PA 15222</p> </h3>
-			</div>
-			<div><img alt="location on the map" src="${pageContext.request.contextPath}/resources/img/location.png"></div>
-		</div>
+	
 	</main>
 	<footer>&copy raftsdev 2022</footer>
 </body>
