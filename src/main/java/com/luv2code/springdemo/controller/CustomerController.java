@@ -14,13 +14,23 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.luv2code.springdemo.entity.Customer;
 import com.luv2code.springdemo.service.CustomerService;
 
+
+
+
 @Controller
-@RequestMapping("/customer")
+@RequestMapping("/")
 public class CustomerController {
 
 	// need to inject our customer service
 	@Autowired
 	private CustomerService customerService;
+	
+	@GetMapping("/about")
+	public String aboutPage() {
+		
+		
+		return "about";
+	}
 	
 	@GetMapping("/list")
 	public String listCustomers(Model theModel) {
