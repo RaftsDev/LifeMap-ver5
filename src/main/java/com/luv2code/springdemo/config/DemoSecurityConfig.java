@@ -38,6 +38,7 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 			.antMatchers("/customer/save*").hasAnyRole("MANAGER", "ADMIN")
 			.antMatchers("/customer/delete").hasRole("ADMIN")
 			.antMatchers("/customer/**").hasRole("EMPLOYEE")
+			.antMatchers("/register/**").hasRole("EMPLOYEE") //for a while till not implemented email verification 
 			.antMatchers("/resources/**").permitAll()
 			.and()
 			.formLogin()
